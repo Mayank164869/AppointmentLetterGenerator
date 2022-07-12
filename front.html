@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="frontstyle.css">
+    <title>AppointmentLetterGenerator</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo"><i >AppointmentLetterGenerator</i></a>
+        <div id="menu-bar" ></div>
+        <nav class="navbar">
+            <a href="front.html">home</a>
+        </nav> 
+    </header>
+    
+    <section class="home" id="home">
+        <div class="content">
+            <marquee behavior = "alternate" loop = "500" scrollamount = "30ms">
+                <p>Customize your appointment letter here</p>
+                </marquee>
+        </div>  
+    </section>
+
+    <section class="popular" id="popular">
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="/images/img1.jpg" alt="" id = "img1">
+                <h3>Template 1</h3>
+                <div class="stars">
+                </div>
+                <a href="index.html" class="btn">Customize</a>
+            </div>
+            <div class="box">
+                <img src="/images/img2.jpg" alt="">
+                <h3>Template 2</h3>
+                <div class="stars">
+                </div>
+                <a href="index1.html" class="btn">Customize</a>
+            </div>
+            <div class="box">
+                <img src="images/img3.jpg" alt="">
+                <h3>Template 3</h3>
+                <div class="stars">
+                </div>
+                <a href="index2.html" class="btn">Customize</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        img = document.getElementById("img1");
+        function enlargeImg() {
+            img.style.width = "60%";
+            img.style.height = "auto";
+            img.style.transition = "width 0.5s ease";
+        }
+        function resetImg() {
+            img.style.width = "40%";
+            img.style.height = "auto";
+            img.style.transition = "width 0.5s ease";
+        }
+    </script>
+</body>
+</html>
