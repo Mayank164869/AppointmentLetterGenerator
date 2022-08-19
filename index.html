@@ -4,37 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="frontstyle.css">
     <title>AppointmentLetterGenerator</title>
 </head>
 <body>
+
     <header>
         <a href="#" class="logo"><i >AppointmentLetterGenerator</i></a>
         <div id="menu-bar" ></div>
         <nav class="navbar">
-            <a href="front.html"><b>HOME</b></a>
+            <a href="front.html">home</a>
         </nav> 
     </header>
+    
+    <section class="home" id="home">
+        <div class="content">
+            <marquee behavior = "alternate" loop = "500" scrollamount = "30ms">
+                <p>Customize your appointment letter here</p>
+                </marquee>
+        </div>  
+    </section>
 
-    <main>
-        <span>Generate your Letter</span>
-        <label for="name">Type Intern name</label>
-        <input required type="text" name="Name" id="name" autocomplete="name" >
-        <label for="name">Type Intern Position</label>
-        <input required type="text" name="Pos" id="pos" autocomplete="position" >
-        <label for="name">Certificate's Issuance Date</label>
-        <input required type="date" name="Date" id="date" autocomplete="Date" >
-        <label for="name">Date of Joining</label>
-        <input required type="date" name="Join" id="join" autocomplete="JoinDate" >
-        <label for="name">Date of Leaving</label>
-        <input required type="date" name="Ter" id="ter" autocomplete="LeaveDate" >
-        <button id="submit">Generate</button>
-    </main>
-
-    <iframe src="" id ="mypdf" height = "600" width = "700" frameborder="0"></iframe>
-    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
-    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
-    <script src="filesaver.js"></script>
-    <script src="index.js"></script>
+    <section class="popular" id="popular">
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="/images/img1.jpg" alt="" id = "img1">
+                <h3>Template 1</h3>
+                <div class="stars">
+                </div>
+                <a href="index.html" class="btn">Customize</a>
+            </div>
+            <div class="box">
+                <img src="/images/img2.jpg" alt="">
+                <h3>Template 2</h3>
+                <div class="stars">
+                </div>
+                <a href="index1.html" class="btn">Customize</a>
+            </div>
+            <div class="box">
+                <img src="images/img3.jpg" alt="">
+                <h3>Template 3</h3>
+                <div class="stars">
+                </div>
+                <a href="index2.html" class="btn">Customize</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        img = document.getElementById("img1");
+        function enlargeImg() {
+            img.style.width = "60%";
+            img.style.height = "auto";
+            img.style.transition = "width 0.5s ease";
+        }
+        function resetImg() {
+            img.style.width = "40%";
+            img.style.height = "auto";
+            img.style.transition = "width 0.5s ease";
+        }
+    </script>
 </body>
 </html>
