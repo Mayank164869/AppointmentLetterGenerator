@@ -17,10 +17,18 @@
     </header>
 
     <main>
-        <span>Generate your Certificate</span>
-        <label for="name">Type your name</label>
+        <span>Generate your Letter</span>
+        <label for="name">Type Intern name</label>
         <input required type="text" name="Name" id="name" autocomplete="name" >
-        <button id="submit">Get Certificate</button>
+        <label for="name">Type Intern Position</label>
+        <input required type="text" name="Pos" id="pos" autocomplete="position" >
+        <label for="name">Certificate's Issuance Date</label>
+        <input required type="date" name="Date" id="date" autocomplete="Date" >
+        <label for="name">Date of Joining</label>
+        <input required type="date" name="Join" id="join" autocomplete="JoinDate" >
+        <label for="name">Date of Leaving</label>
+        <input required type="date" name="Ter" id="ter" autocomplete="LeaveDate" >
+        <button id="submit">Generate</button>
     </main>
 
     <iframe src="" id ="mypdf" height = "600" width = "700" frameborder="0"></iframe>

@@ -42,6 +42,34 @@ input[name="Name"]{
     border-bottom: 1px solid black;
     text-align: center;
 }
+input[name="Pos"]{
+  font-size: large;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+input[name="Date"]{
+  font-size: large;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+input[name="Join"]{
+  font-size: large;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+input[name="Ter"]{
+  font-size: large;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
 #submit{
     background-color: #8bc34a;
     color: #fff;
